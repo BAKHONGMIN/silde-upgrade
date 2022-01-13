@@ -26,9 +26,9 @@
                 bannerLink : "https://google.com",
               },
             ],
-            imgSlide : function(c){
-                $("#banner").attr("href",this.imginfo[c].bannerLink);
-                $("#banner img").attr("src", this.imginfo[c].bannerImg);
+            imgSlide : function(e){
+                $("#banner").attr("href",this.imginfo[e].bannerLink);
+                $("#banner img").attr("src", this.imginfo[e].bannerImg);
             }
         }
       var count = 0;
@@ -36,7 +36,7 @@
         count++;
         count %=3;
         bannerDB.imgSlide(count);
-      },3000);
+      },1000);
       
 });
 
