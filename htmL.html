@@ -26,9 +26,9 @@
                 bannerLink : "https://google.com",
               },
             ],
-            imgSlide : (c) => {
-                $("#banner").attr("href",bannerDB.imginfo[c].bannerLink);
-                $("#banner img").attr("src", bannerDB.imginfo[c].bannerImg);
+            imgSlide : function(c){
+                $("#banner").attr("href",this.imginfo[c].bannerLink);
+                $("#banner img").attr("src", this.imginfo[c].bannerImg);
             }
         }
       var count = 0;
